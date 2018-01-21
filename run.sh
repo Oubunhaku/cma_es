@@ -73,6 +73,7 @@ for ((n_population=0;n_population<$population;n_population++))
     mkdir $model_path
     touch ${eval_scr}
     
+    # generate some fake score for testing
     $py_cmd toy_nmt.py \
     --model-desc $model_desc \
     --trg $eval_scr \

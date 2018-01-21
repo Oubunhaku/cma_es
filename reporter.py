@@ -3,14 +3,6 @@ import numpy as np
 from logger import *
 import argparse
 
-# target_file = "genes.scr"
-# base_path = "generation_%s/"
-
-# scr_file = "bleu.scr"
-# population = 30
-# pop_idx = 7
-# n_gen = 0
-
 
 def get_arguments():
     parser = argparse.ArgumentParser(description=None)

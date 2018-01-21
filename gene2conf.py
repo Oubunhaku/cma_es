@@ -4,10 +4,6 @@ import os
 from logger import *
 import argparse
 
-
-# target_path = "generation_%s/model_description/"
-# target_file = "model_%s.conf"
-# genes_path = "generation_00/genes/"
 hparams = [
     "batch_size",
     "rnn_num_hidden",

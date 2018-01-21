@@ -5,17 +5,8 @@ import os
 import argparse
 from logger import *
 
-# generation = 10
-# population = 30
-
-# backup = "backup_files/"
-# init_hparam = "protos/gene_cont"
-# score_file = ""
-# es_filename = "es_generation_%s.pkl"
-# gene_vec_filename = "gene_vec_%s.pkl"
-# gene_path = "generation_%s/genes"
-# gene_file = "generation_%s/genes/%s.gene"
-
+def conf2gene(conf):
+    pass
 
 def get_arguments():
     parser = argparse.ArgumentParser(description=None)

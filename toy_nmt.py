@@ -23,11 +23,6 @@ def get_arguments():
     return args
 
 
-
-# path = "generation_%s/model_%s/"
-# target_file = "bleu.scr"
-# n_gen=0
-# n_model=0
 n_data = 100
 template = "%s BLEU = %.5f, %.5f/%.5f/%.5f/%.5f (BP=0, ratio=0, hyp_len=0, ref_len=0)\n"
 
