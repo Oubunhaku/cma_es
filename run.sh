@@ -1,7 +1,7 @@
 # current generation
 n_generation=$1
 # number of generation 
-generation=2
+generation=10
 # current population
 n_population=0
 # number of population
