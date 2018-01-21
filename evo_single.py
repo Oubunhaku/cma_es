@@ -60,7 +60,7 @@ def evolution(args):
         with open(args.scr) as f:
             # read score file
             scores = f.readlines()
-        Y = list(map(lambda x: float(x.split("\t")[-1].strip()), scores))
+        Y = list(map(lambda x: -float(x.split("\t")[-1].strip()), scores))
         es.tell(X, Y)
 
     # save current checkpoint
