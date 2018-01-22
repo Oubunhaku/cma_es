@@ -3,4 +3,4 @@
 a CMA-ES based hyperparameter optimization tool.
 
 basic usage:
- _./run.sh 0_
+ ./run.sh 0
