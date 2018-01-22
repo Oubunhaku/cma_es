@@ -5,12 +5,21 @@ import os
 import argparse
 from logger import *
 
-map_func=[
-    
+map_func = [
+    # add corresponding map function here
+    np.log,
+    np.log,
+    np.ceil,
 ]
 
-def conf2gene(conf):
-    pass
+
+def conf2gene(confs, map_funcs):
+    genes = []
+    assert len(confs) == len(map_funcs)
+    for conf, func in zip(confs, map_funcs):
+        genes.append(func(conf))
+    return genes
+
 
 def get_arguments():
     parser = argparse.ArgumentParser(description=None)
@@ -38,6 +47,7 @@ def evolution(args):
         with open(args.init) as f:
             init_vec = f.readlines()
         init_vec = list(map(lambda x: float(x.strip()), init_vec))
+        init_vec = conf2gene(init_vec, map_func)
 
         es = cma.CMAEvolutionStrategy(init_vec, 0.1, {
             'seed': 1,

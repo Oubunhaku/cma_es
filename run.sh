@@ -90,5 +90,4 @@ for ((n_population=0;n_population<$population;n_population++))
     --n-gen $n_generation
 
   done    
-
-echo "Finished!"
+# Finished
