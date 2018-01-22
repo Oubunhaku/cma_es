@@ -5,16 +5,17 @@ from logger import *
 import argparse
 
 hparams = [
+    # add hyper-parameter here,
     "batch_size",
     "rnn_num_hidden",
     "num_layers",
 ]
 map_funcs = [
+    # add map function here
     lambda x: np.ceil(x).astype(np.int),
     lambda x: np.floor(x).astype(np.int),
     lambda x: np.ceil(x + 100).astype(np.int),
 ]
-# generation = 0
 
 assert len(hparams) == len(map_funcs)
 

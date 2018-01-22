@@ -34,6 +34,7 @@ n_hparam=5
 # command for python interpreter
 py_cmd=python3
 
+# exit when max generation reached
 if(($n_generation>=$generation)) 
 then
   exit 
@@ -81,7 +82,7 @@ for ((n_population=0;n_population<$population;n_population++))
     --n-gen $n_generation \
     --n-model $n_population
 
-    # report result
+    # report result to gene.scr file
     $py_cmd reporter.py \
     --trg ${generation_path}genes.scr \
     --scr $eval_scr \
