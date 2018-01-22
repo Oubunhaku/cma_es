@@ -5,6 +5,10 @@ import os
 import argparse
 from logger import *
 
+map_func=[
+    
+]
+
 def conf2gene(conf):
     pass
 

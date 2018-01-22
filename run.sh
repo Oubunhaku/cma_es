@@ -1,7 +1,7 @@
 # current generation
 n_generation=$1
 # number of generation 
-generation=10
+generation=5
 # current population
 n_population=0
 # number of population
@@ -70,6 +70,7 @@ $py_cmd gene2conf.py \
 for ((n_population=0;n_population<$population;n_population++))
   do
     model_path="${generation_path}model_$(printf "%02d" "$n_population")/"
+    eval_scr="${model_path}bleu.scr"
     mkdir $model_path
     touch ${eval_scr}
     
