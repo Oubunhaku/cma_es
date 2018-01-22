@@ -19,7 +19,7 @@ gene_path="${generation_path}genes/"
 # path to gene files
 gene="${gene_path}/%s.gene"
 # initial gene file
-init="gene.init"
+init="init.conf"
 # path for model description file's folder
 model_desc_path="${generation_path}model_description/"
 # path to model descption file 
