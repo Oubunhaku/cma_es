@@ -1,4 +1,4 @@
-# CMA-ES
+# CMA-ES (dev. version)
 
 a CMA-ES based hyperparameter optimization tool.
 
@@ -22,4 +22,4 @@ basic usage:
 
 ``reporter.py``:  load the evalution result file (e.g. BLEU score) output by each model. report them in a file.
 
-``toy_nmt.py``: Script to generate random score as a fake model for testing. (format from sockeye-recipe)
+``toy_nmt.py``: Script to generate random score as a fake evaluation score for testing. (format from sockeye-recipe)
