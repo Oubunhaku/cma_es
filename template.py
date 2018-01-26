@@ -1,4 +1,23 @@
-class BaseTemplate(object):
+class BasicTemplate(object):
+    def __init__(self):
+        self.hparams = {}
+        self.template = ""
+
+    def hparam_list(self):
+        return list(self.hparams.keys())
+
+    def render(self):
+        hparams = tuple(self.hparams.values())
+        return self.template % hparams
+
+    def update(self, updated_dict):
+        self.hparams.update(updated_dict)
+
+    def hparams(self):
+        return self.hparams
+
+
+class SockeyeTemplate(BasicTemplate):
     def __init__(self):
         self.hparams = {
             # User-specified directories
@@ -148,13 +167,3 @@ checkpoint_frequency=%s
 max_updates=%s
 keep_last_params=%s
 '''
-
-    def hparam_list(self):
-        return list(self.hparams.keys())
-
-    def render(self):
-        hparams = tuple(self.hparams.values())
-        return self.template % hparams
-
-    def update(self, updated_dict):
-        self.hparams.update(updated_dict)

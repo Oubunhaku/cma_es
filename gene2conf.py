@@ -1,4 +1,4 @@
-from template import BaseTemplate
+from template import SockeyeTemplate
 import numpy as np
 import os
 from logger import *
@@ -66,7 +66,7 @@ if __name__ == "__main__":
     args = get_arguments()
     genes = gene_parser(args)
 
-    base = BaseTemplate()
+    base = SockeyeTemplate()
     logging.info("======================================================")
     logging.info("(Generation %d) Start generate model description" % args.n_gen)
     logging.info("======================================================")
