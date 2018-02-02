@@ -23,3 +23,7 @@ basic usage:
 ``reporter.py``:  load the evalution result file (e.g. BLEU score) output by each model. report them in a file.
 
 ``toy_nmt.py``: Script to generate random score as a fake evaluation score for testing. (format from sockeye-recipe)
+
+### Copyright
+
+Copyright (c) 2018 Shinozaki-lab, Tokyo Institute of Technology (Author: baiyuuz)
