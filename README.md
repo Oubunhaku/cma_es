@@ -26,4 +26,4 @@ basic usage:
 
 ### Copyright
 
-Copyright (c) 2018 Shinozaki-lab, Tokyo Institute of Technology (Author: baiyuuz)
+Copyright (c) 2018 Shinozaki-lab, Tokyo Institute of Technology.
